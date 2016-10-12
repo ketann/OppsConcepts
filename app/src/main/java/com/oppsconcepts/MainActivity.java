@@ -75,5 +75,7 @@ public class MainActivity extends AppCompatActivity {
         ChildClass childClass = new ChildClass();
         //Subtraction method called on child object
         childClass.substract();
+
+        //---------------------------------Example Abstract---------------------------------------//
     }
 }
