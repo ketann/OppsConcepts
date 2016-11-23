@@ -8,6 +8,8 @@ import android.widget.TextView;
 import com.oppsconcepts.Encapsulation.FruitDetails;
 import com.oppsconcepts.Encapsulation.UserDetails;
 import com.oppsconcepts.Inheritance.ChildClass;
+import com.oppsconcepts.Interface.Dove;
+import com.oppsconcepts.Interface.Duck;
 import com.oppsconcepts.Polymorphism.Addition;
 import com.oppsconcepts.Polymorphism.Bike;
 import com.oppsconcepts.Polymorphism.Vehicle;
@@ -77,5 +79,34 @@ public class MainActivity extends AppCompatActivity {
         childClass.substract();
 
         //---------------------------------Example Abstract---------------------------------------//
+
+
+        //---------------------------------Example interface---------------------------------------//
+
+        Duck duck = new Duck();
+        duck.goFroword();
+        duck.goDown();
+
+        Dove dove = new Dove();
+        dove.goFroword();
+        dove.goDown();
+
+        //---------------------------------Example StringBuffer and StringBuilder----------------------------------------//
+
+        long startTime = System.currentTimeMillis();
+        StringBuffer sb = new StringBuffer("Ketan");
+        for (int i = 0; i < 1000; i++) {
+            sb.append("Nakum");
+        }
+        System.out.println("Time taken by StringBuffer: " + (System.currentTimeMillis() - startTime) + "ms");
+        startTime = System.currentTimeMillis();
+        StringBuilder sb2 = new StringBuilder("Ketan");
+        for (int i = 0; i < 1000; i++) {
+            sb2.append("Nakum");
+        }
+        System.out.println("Time taken by StringBuilder: " + (System.currentTimeMillis() - startTime) + "ms");
+
+
+
     }
 }
